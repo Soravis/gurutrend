@@ -118,7 +118,7 @@
 			          if(!$temp) echo("Error when updating database");
 			       }
 			       if($_GET["pID"] && $_GET["like"]) {
-			          echo("found");
+			          
 			          $query = 'update problem set like = like+1 where pID='.$_GET["pID"];
 			          
 			          $temp = $db->exec($query);
